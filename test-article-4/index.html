@@ -1,0 +1,45 @@
+<!-- Example template.html -->
+<!-- Replace with your own template -->
+<!-- Also create your own stylesheet and link it here -->
+<!-- The title is inserted under the div tag with ID gpmb_title_root -->
+<!-- The date is inserted under the div tag with ID gpmb_date_root -->
+<!-- The body is inserted under the div tag with ID gpmb_body_root -->
+<!-- To modify the date, insert a custom js tag at the bottom of this file -->
+
+<html>
+<head>
+  <title>Test article 4</title>
+  <link rel="stylesheet" href="../template.css" />
+</head>
+<body>
+  <div>
+    <h1 id="blog-name">My blog</h1>
+  </div>
+  <div id="gpmb_title_root"><h1>Test article 4</h1></div>
+  <div id="gpmb_date_root"><p>8/20/2020, 9:37:50 AM</p></div>
+  <div id="gpmb_body_root"><p>Some code today:</p>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+// not tested so not sure if it will actually work
+
+std::string fizzbuzz(int n) {
+  if (n % 5 == 0) {
+    if (n % 3 == 0) return "FizzBuzz";
+    return "Buzz";
+  } 
+  if (n % 3 == 0) {
+    return"Fizz";
+  }
+  return std::string(1, n + '0');
+};
+
+int main() {
+  int x; std::cin &gt;&gt; x;
+  for (int i = 0; i &lt; x + 1; i++) {
+    std::cout &lt;&lt; fizzbuzz(i) &lt;&lt; std::endl;
+  }
+}</code></pre></div>
+</body>
+</html>
+
